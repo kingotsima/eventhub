@@ -1,0 +1,8 @@
+To make Email admin
+
+Run php artisan tinker
+then
+$user = \App\Models\User::where('email', 'EventHub1000@gmail.com')->first();
+$user->is_admin = true;
+$user->save();
+exit
